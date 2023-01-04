@@ -7,209 +7,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
-    <title>DT_trial</title>
+    <title>Mail template</title>
 </head>
-<body style="margin: 0;padding: 0;">
-<div>
-    <div class="padding">
-        <style scoped>
+<body style="background-color: #FEF2F0; padding: 20px 0 20px 0">
+    <div style="">
+        <style>
             @media only screen and (max-width: 400px) {
                 .padding{
-                    padding: 32px 20px 0 20px ;
+                    padding: 32px 20px 5px 20px !important ;
                 }
             }
             @media only screen and (min-width: 401px){
                 .padding{
-                    padding: 42px 40px 0 40px ;
+                    padding: 42px 40px 5px 40px !important;
+                }
+            }
+
+            @media only screen and (max-width: 400px) {
+                .desktopFooter{
+                    display: none;
+                }
+                .mobileFooter{
+                    display: block;
+                }
+            }
+            @media only screen and (min-width: 401px){
+                .mobileFooter{
+                   display: none;
+                }
+                .desktopFooter{
+                    display: block;
                 }
             }
         </style>
-        <!--    nav-->
-        <div style="display: flex;">
-            <img src="./images/logo.png" style="width: 66px; height: 34px;" alt="">
-            <div style="margin-left: auto;">
-                <p style=" font-family: Inter; font-weight: 400; font-size: 12px; color: #151414; margin-bottom: 4px;">14 October, 2022</p>
-                <p style=" font-family: Inter; font-weight: 400; font-size: 12px; color: #151414; margin-top: 0px">Saturday, 9:40pm</p>
-            </div>
-        </div>
-        <!--    card part-->
-        <div style="margin-top: 20px; background: #EFF7FD; display: flex; border-radius: 8px">
-            <div style="padding-left: 16px; padding-top: 20px; padding-bottom: 20px;">
-                <p style="font-family: Inter; font-weight: 600; font-size: 16px; text-align: justify; color: #151414">Hi Rashedul, Thanks for
-                    <br> your ride!</p>
-                <p class="breakPoint" style="font-family: Inter; font-weight: 400; font-size: 14px; text-align: justify; color: #151414; margin-top: 4px">We hope you enjoyed your
-                     ride with us.</p>
-            </div>
-            <div style="display: flex; margin-top:20px; margin-left:auto">
-                <img src="./images/car.png" style="width: 110px; height: 80px; margin-top: 10px;" alt="">
-            </div>
-        </div>
-        <!--    invoice section-->
-        <div style="margin-top: 5px;">
-            <div style="display: flex;">
-                <p style="font-family: Inter; font-weight: 400; font-size: 24px; text-align: justify; color: #151414; float: left;">Total</p>
-                <p style="font-family: Inter; font-weight: 600; font-size: 24px; text-align: justify; color: #151414; float: right; margin-left: auto;">BDT 900</p>
-            </div>
-            <hr style="border-top: 1px solid black">
-            <div style="display: flex;">
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414">Trip fare</p>
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; margin-left: auto;">BDT 600</p>
-            </div>
-            <hr style="border-top: 1px dashed #DBDBDB">
-            <div style="display: flex; margin-left: auto;">
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414">Extra charge</p>
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; margin-left: auto;">BDT 100</p>
-            </div>
-            <hr style="border-top: 1px dashed #DBDBDB">
-            <div style="display: flex; margin-left: auto;">
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414">Promo code</p>
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #48A43F; margin-left: auto;">-BDT 100</p>
-            </div>
-            <hr style="border-top: 1px dashed #DBDBDB">
 
-            <div style="display: flex; margin-left: auto;">
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414">Net total</p>
-                <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; margin-left: auto;">BDT 600</p>
+        <div style="background-color: white; width: 600px; margin: 0 auto;">
+            <div style="padding: 32px 20px 5px 20px">
+                <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+                    <tr>
+                        <td style="text-align: left;"><img src="./images/logo.png" style="width: 66px; height: 34px;" alt=""></td>
+                        <td style="text-align: right; font-family: Inter; font-weight: 400; font-size: 12px; color: #151414;">
+                            <p style="margin-top: 0; margin-bottom: 4px;">14 October, 2022</p>
+                            <p style="margin-top: 0; margin-bottom: 10px;">Saturday, 9:40pm</p>
+                        
+                        </td>
+                    </tr>
+                    <tr style="background-color: #EFF7FD; border-radius: 8px;">
+                        <td style="padding: 10px; text-align: left;">
+                            <span style="font-family: Inter; font-weight: 600; font-size: 16px; text-align: justify; color: #151414">Hi Rashedul, Thanks for <br> your ride!</span>
+                            <span style="margin-top: 8px; display: block; font-family: Inter; font-weight: 400; font-size: 14px; text-align: justify; color: #151414;">We hope you enjoyed your ride with us.</span>
+                        </td>
+                        <td style="text-align: right; padding: 20px 0px 20px;"><img src="./images/car.png" style="width:120px; height:80px" alt=""></td>
+                    </tr>
+        
+                    <tr style="border-bottom: 1px solid black;">
+                        <td>
+                            <p style="font-family: Inter; font-weight: 400; font-size: 24px; text-align: justify; color: #151414; text-align: left;">
+                                Total
+                            </p>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 600; font-size: 24px; text-align: justify; color: #151414; text-align: right;">BDT 900</td>
+                    </tr>
+        
+                    <tr style="border-bottom: 1px dashed #DBDBDB;">
+                        <td>
+                            <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; text-align: left;">
+                                Trip fare
+                            </p>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #151414; text-align: right;">BDT 600</td>
+                    </tr>
+        
+                    <tr style="border-bottom: 1px dashed #DBDBDB;">
+                        <td>
+                            <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; text-align: left;">
+                                Extra charge
+                            </p>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #151414; text-align: right;">BDT 600</td>
+                    </tr>
+        
+                    <tr style="border-bottom: 1px dashed #DBDBDB;">
+                        <td>
+                            <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; text-align: left;">
+                                Promo code
+                            </p>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #48A43F; text-align: right;">-BDT 100</td>
+                    </tr>
+        
+                    <tr style="border-bottom: 1px solid #DBDBDB;">
+                        <td>
+                            <p style="font-family: Inter; font-weight: 400; font-size: 16px; text-align: justify; color: #151414; text-align: left;">
+                                Net total
+                            </p>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #151414; text-align: right;">BDT 600</td>
+                    </tr>
+        
+                    <tr>
+                        <td style="text-align: left;">
+                            <div>
+                                <p>PAYMENT</p>
+                                <div style="display: flex;">
+                                    <img src="./images/cash.png" style="width: 24px; height: 24px; margin-top: 30px;" alt="">
+                                    <div style="margin-left: 16px;">
+                                        <p>Cash</p>
+                                        <p>12: 20 PM, 22 Oct 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #151414; text-align: right;">
+                            BDT 700
+                        </td>
+                    </tr>
+        
+                </table>
             </div>
-            <hr style="border-top: 1px solid #DBDBDB">
-        </div>
-        <!--    cash-->
-        <div style=" font-family: inter;">
-            <p style="color: #8D8D8F; font-size: 12px; line-height: 16px; text-align: left; font-weight: 600; margin-top: 8px;">PAYMENT</p>
-            <div style="display: flex;">
-                <div style="display: flex; gap:16px;">
-                    <img src="./images/cash.png" style="height:24px; width: 24px; margin-top: 25px;" alt="">
-                    <div style="margin-left: 10px;">
-                        <p style="color:#151414; font-size: 14px; line-height: 20px; text-align: left; font-weight: 600">Cash</p>
-                        <p style="color: #676769; color:#676769; font-size: 14px; line-height: 16px; text-align: left; font-weight: 400">12: 20 PM, 22 Oct 2022</p>
-                    </div>
-                </div>
-                <p style="color:#151414; font-size: 14px; line-height: 20px; text-align: left; font-weight: 400; margin-left: auto;">BDT 700</p>
-            </div>
-        </div>
-    </div>
-    <hr style="border-top: 1px solid #DBDBDB">
-<!--download section-->
-    <div class="padding" style="display: flex; margin: auto;">
-        <a href="#" style="text-align:center; width:100%; text-decoration: none; column-gap: 11px; font-family: Inter; font-weight: 500; font-size: 14px; text-align: center; color: #1E88E5; ">
-         <img src="./images/download.png" style="width: 18px; height: 19px; vertical-align: middle;" alt="">  Download invoice (PDF)
-        </a>
-    </div>
-<!--driver section-->
-    <div style="margin-top: 18px; background: #F7F7F7; padding: 30px 20px 30px 20px">
-            <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: left; color: #8D8D8F">YOUR RIDE WITH</p>
-        <div style="display: flex; column-gap: 16px; align-items: center;">
-            <div>
-                <img src="./images/man.png" style="width: 56px; height: 56px; border-radius: 100%;" alt="">
-                <div style="width: 44px; background: white; border-radius: 1000px; margin-left: 5px;">
-                    5.0 ★
-                </div>
-            </div>
-            <div>
-                <p style="font-family: Inter; font-weight: 500; font-size: 20px; text-align: left; color: #151414">Abdul Karim</p>
-                <p style="font-family: Inter; margin-top: 0; color:#8D8D8F; font-size: 14px; text-align: left; font-weight: 400; display: flex; column-gap: 6px;">KIA SPORTAGE
-                    <span style="height: 5px; width: 5px; background-color: #676769; border-radius: 100%; margin-top: 8px;"></span> DHA GA 36-5467 </p>
-            </div>
-        </div>
-    </div>
-    <div class="padding">
-        <div style="display: flex; column-gap:12px; align-items: center; font-family: inter">
-            <div style="width: 61px; line-height: 20px; height: 20px; border: 1px solid #8D8D8F; border-radius: 40px; font-size: 12px; font-weight: 500; text-align: center; color: #4D4D4F;">
-               <span style="text-align: center;"> Rental </span>
-            </div>
-            <p style="font-size: 14px; font-weight: 500; color: #4D4D4F;">8.5 KM</p>
-            <!-- <div style="height: 20px; background-color: #4D4D4F; width: 2px; margin-top: 10px;">
-            </div> -->
-            <img src="./images/small_line.png" style="height:20px;" alt="">
-            <p style="font-size: 14px; font-weight: 500; color: #4D4D4F;">45 Min</p>
-            <img src="./images/small_line.png" style="height:20px;" alt="">
-            <p style="font-size: 14px; font-weight: 500; color: #4D4D4F;">Trip id JT5634737</p>
-        </div>
-
-        <div style="display: flex; column-gap: 15px; margin-top: 20px; font-family: Inter">
-            <div style="">
-                <div style="display: flex; column-gap: 15px;">
-                    <img src="./images/pickup.png" style="height: 15px; width: 15px; margin-top: 10px;"  alt="">
-                    <div style="margin-bottom: 0px">
-                        <p style="color:#151414; font-size: 12px; text-align: left; font-weight: 400; margin-top: 0">PICK UP LOCATION</p>
-                        <p style="color:#151414; font-size: 16px; text-align: left; font-weight: 500; margin-bottom: 0">Radisson Blu Dhaka Water Garden, Airport Rd</p>
-                    </div>
-                </div>
-                <div style="height: 47px; width: 2px; border-left: 2px solid black; margin-left: 4px"></div>
-                <div style="display: flex; column-gap: 15px; justify-content: center">
-                    <img src="./images/drop.png" style="width: 15px; height: 15px; margin-top: 10px;" alt="">
-                    <div style="">
-                        <p style="color:#151414; font-size: 12px; text-align: left; font-weight: 400; margin-top: 0">DROP OFF LOCATION</p>
-                        <p style="color:#151414; font-size: 16px; text-align: left; font-weight: 500 ;margin-bottom: 0;">Radisson Blu Dhaka Water Garden, Airport Rd</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--        send request section-->
-        <div style="border: 1px solid #DBDBDB; margin-top: 25px;">
-            <div style="display: block; margin: 0 auto; width: fit-content; padding: 10px 0px;">
-                <div style="display: flex; column-gap: 5px;">
-                    <img src="./images/reset.png" style="width: 15px;" alt="">
-                    <span style="color: #f04935; font-size: 12px; text-align: center; font-weight: 500">Send request again</span>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--    footer-->
-    <div style="background: #f04935; padding: 25px; margin-top: 31px">
-        <style>
-            @media screen and (max-width: 400px) {
-                .logo{
-                    width: 48px;
-                    height: 24px;
-                }
-            }
-            @media screen and (max-width: 400px) {
-                .buttons{
-                    width: 70px;
-                    height: 20px;
-                }
-            }
-        </style>
-        <div style="display: flex; border-bottom: 1px solid rgb(167, 163, 163); padding-bottom: 10px;">
-            <img class="logo" src="./images/white_logo.png" alt="" style="width:48px; height: 24px">
-
-            <div style="display: flex; justify-content: center; column-gap:9px; align-items: center; margin-left: auto;">
-                <a href="#"><img class="buttons" src="./images/google_play.png" style="width: 72px; height:20px;" alt=""></a>
-                <a href="https://jatri.co"><img class="buttons" src="./images/visit.png" style="width: 72px; height:20px;" alt=""></a>
-            </div>
-        </div>
-        <!-- <hr style="margin-top: 20px; opacity: 40%"> -->
-            <div class="largedisplaying">
-                <div style=" column-count: 3; column-gap: 60px; width: 100%; border-bottom: 1px solid rgb(167, 163, 163); padding-bottom: 5px;">
-                    <div style="display: flex; column-gap: 2px;">
-                        <img src="./images/question.png" alt="" style="width:13.33px; height:13.33px; margin-top: 15px;">
-                        <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: right; color: white">support@jatri.co</p>
-                    </div>
-                    <div style="display: flex; column-gap: 2px;">
-                        <img src="./images/phone.png" alt="" style="width:13.33px; height:13.33px; margin-top: 15px;">
-                        <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: right; color: white">09642080808</p>
-                    </div>
-                    <div style="text-align: -webkit-right;">
-                        <a href="#"><img src="./images/facebook.png" alt="" style="width:20px; height:20px; margin-top: 13px;"></a>
-                        <a href="#"><img src="./images/youtube.png" alt="" style="width:20px; height:20px; margin-top: 13x; margin-left: 15px;"></a>
-                        <a href="#"><img src="./images/linkedin.png" alt="" style="width:20px; height:20px; margin-top: 13px; margin-left: 15px;"></a>
-                    </div>
-                </div>
-                <!-- <hr style="margin-top: 16px; opacity: 40%"> -->
-                <div style="margin-top: 26px; display:flex; width: 100%;">
-                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; text-decoration: none;">
-                        Terms and condition 🠒
-                    </a>
-                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; text-decoration: none;">
-                        Return & refund policy 🠒
-                    </a>
-                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; text-decoration: none; text-align: -webkit-right;">
-                        Privacy policy 🠒
+        <hr style="border-top: 1px solid #DBDBDB;">
+        
+                <div  style="display: flex; margin: auto; padding: 32px 20px 5px 20px; ">
+                    <a href="#" style="text-align:center; width:100%; text-decoration: none; column-gap: 11px; font-family: Inter; font-weight: 500; font-size: 14px; text-align: center; color: #1E88E5; ">
+                     <img src="./images/download.png" style="width: 18px; height: 19px; vertical-align: middle;" alt="">  Download invoice (PDF)
                     </a>
                 </div>
-            </div>
-    </div>
+                <table width="100%" cellspacing="0" style="border-collapse: collapse; margin-top: 20px; background-color: #F7F7F7;">
+                    <tr style="">
+                        <td style="text-align: left; padding: 20px 40px 20px 40px;">
+                            <div>
+                                <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: left; color: #8D8D8F">YOUR RIDE WITH</p>
+                                <div style="display: flex;">
+                                    <div>
+                                        <img src="./images/man.png" style="width: 56px; height: 56px; margin-top: 15px;" alt="">
+                                        <div style="width: 44px; background: white; border-radius: 1000px; margin-left: 5px;">
+                                            5.0 ★
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 16px;">
+                                        <p style="font-family: Inter; font-weight: 500; font-size: 20px; text-align: left; color: #151414">Abdul Karim</p>
+                                        <p style="font-family: Inter; margin-top: 0; color:#8D8D8F; font-size: 12px; text-align: left; font-weight: 400; display: flex; column-gap: 6px;">KIA SPORTAGE
+                                            <span style="height: 5px; width: 5px; background-color: #C8C8C8; border-radius: 100%; margin-top: 4px;"></span> DHA GA 36-5467 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="font-family: Inter; font-weight: 500; font-size: 16px; text-align: justify; color: #151414; text-align: right; padding-right: 20px;">
+                            BDT 700
+                        </td>
+                    </tr>
+                </table>
+        
+                <div style="padding: 32px 20px 5px 20px">
+                    <table  cellspacing="0">
+                        <tr>
+                        <div style="margin-top: 20px;">
+                            <td style="width: 70px;">
+                                <div style="width: 61px; line-height: 20px; height: 20px; border: 1px solid #8D8D8F; border-radius: 40px; font-size: 12px; font-weight: 500; text-align: center; color: #4D4D4F;">
+                                    <span style="text-align: center;"> Rental </span>
+                                 </div>
+                            </td>
+                            <td style="width: 50px; font-size: 14px; font-weight: 500; color: #4D4D4F;">
+                                8.5 KM
+                            </td>
+                            <td style="width: 10px;">
+                                <img src="./images/small_line.png" alt="">
+                            </td>
+                            <td style="font-size: 14px; font-weight: 500; color: #4D4D4F;">
+                                8.5 KM
+                            </td>
+                            <td style="width: 10px;">
+                                <img src="./images/small_line.png" alt="">
+                            </td>
+                            <td style="font-size: 14px; font-weight: 500; color: #4D4D4F;">
+                                Trip id JT5634737
+                            </td>
+                            
+                        </div>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div style="padding: 32px 20px 5px 20px">
+                    <table  cellspacing="0">
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="./images/pickup.png" alt="">
+                                </div>
+                                <div style="margin-left: 5px;">
+                                    <img src="./images/long_line.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/drop.png" alt="">
+                                </div>
+                            </td>
+                            <td style="width: 100%;">
+                                <div style="margin-left: 20px; margin-top: 20px;">
+                                    <div style="">
+                                        <p style="font-family: Inter; color:#151414; font-size: 12px; text-align: left; font-weight: 400; margin-top: 0">PICK UP LOCATION</p>
+                                        <p style="font-family: Inter; color:#151414; font-size: 16px; text-align: left; font-weight: 600; margin-bottom: 0; margin-top: 0;">Radisson Blu Dhaka Water Garden, Airport Rd</p>
+                                    </div>
+                                    <hr style="border: 1px solid #DBDBDB; margin-top: 10px;">
+                                    <div style="margin-top: 20px;">
+                                        <p style="font-family: Inter; color:#151414; font-size: 12px; text-align: left; font-weight: 400; margin-top: 0">PICK UP LOCATION</p>
+                                        <p style="font-family: Inter; color:#151414; font-size: 16px; text-align: left; font-weight: 600; margin-bottom: 0">Radisson Blu Dhaka Water Garden, Airport Rd</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+        
+                    <div style="border: 1px solid #DBDBDB; margin-top: 25px;">
+                        <div style="display: block; margin: 0 auto; width: fit-content; padding: 10px 0px;">
+                            <div style="display: flex; column-gap: 5px;">
+                                <img src="./images/reset.png" style="width: 15px;" alt="">
+                                <span style="color: #f04935; font-size: 12px; text-align: center; font-weight: 500">Send request again</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- desktop footer -->
+                <div style="margin-top: 20px;">
+                    <table  cellspacing="0" cellpadding="0" width="100%" style="background-color: #f04935; padding: 20px;">
+                        <tr>
+                            <td style="width: 100%; border-bottom: 1px solid rgb(161, 156, 158); padding-bottom: 15px;">
+                                <div style="display: flex;">
+                                    <img src="./images/desktop_white_logo.png" style="" alt="">
+                                    <div style="display: flex; margin-left: auto;">
+                                        <img src="./images/desktop_googleplay.png" alt="" style="text-align: -webkit-right;">
+                                        <img src="./images/desktopjatri.png" alt="" style="margin-left: 10px;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+        
+        
+                        <tr>
+                            <td style="border-bottom: 1px solid rgb(161, 156, 158);">
+                                <div style="display: flex;">
+                                    <a  href="mailto:support@jatri.co" style="display: flex; column-gap: 2px; text-decoration: none;">
+                                        <img src="./images/question.png" alt="" style="width:13.33px; height:13.33px; margin-top: 15px;">
+                                        <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: right; color: white">support@jatri.co</p>
+                                    </a>
+                                    <a href="tel:09642080808" style="display: flex; column-gap: 2px; margin-left: auto; text-decoration: none;">
+                                        <img src="./images/phone.png" alt="" style="width:13.33px; height:13.33px; margin-top: 15px;">
+                                        <p style="font-family: Inter; font-weight: 500; font-size: 12px; text-align: right; color: white;">09642080808</p>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-bottom: 1px solid rgb(161, 156, 158); padding-bottom: 15px;">
+                                <div style="display: block; margin:0 auto; width: fit-content;">
+                                    <div style="display: flex; gap: 44px; margin-top: 10px;">
+                                        <a href="#"><img src="./images/facebook.png" alt="" style="width: 25px;"></a>
+                                        <a href="#"><img src="./images/youtube.png" alt="" style="width: 25px;"></a>
+                                        <a href="#"><img src="./images/linkedin.png" alt="" style="width: 20px; height: 20px; margin-top: 2px;"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div style="margin-top: 26px; display:flex; width: 100%; text-align: center;">
+                                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; display: flex; gap: 6px;">
+                                        Terms and condition <img src="./images/right-arrow.png" style="width:10px; object-fit: cover;" alt="">
+                                    </a>
+                                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; display: flex; gap: 6px;">
+                                        Return & refund policy <img src="./images/right-arrow.png" style="width:10px; object-fit: cover;" alt="">
+                                    </a>
+                                    <a href="#" style="font-family: Inter; color: white; font-size: 12px; width:33.33%; text-align: -webkit-right; display: flex; gap: 6px;">
+                                        Privacy policy <img src="./images/right-arrow.png" style="width:10px; object-fit: cover;" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
 </div>
+    
 </body>
 </html>
