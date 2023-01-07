@@ -1,107 +1,426 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Aloha!</title>
-
-<style type="text/css">
-    * {
-        font-family: Verdana, Arial, sans-serif;
-    }
-    table{
-        font-size: x-small;
-    }
-    tfoot tr td{
-        font-weight: bold;
-        font-size: x-small;
-    }
-    .gray {
-        background-color: lightgray
-    }
-</style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail template</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        table{
+            border-spacing: 0;
+        }
+        td{
+            padding: 0;
+        }
+        img {
+            border: 0;
+        }
+        .wrapper{
+            width: 100%;
+            table-layout: fixed;
+            background-color: #FEF2F0;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .main{
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            font-family: sans-serif;
+        }
+        .two-columns{
+            display: flex;
+        }
+        .two-columns .column{
+            width: 100%;
+            max-width: 300px;
+            vertical-align: top;
+        }
+        .oneColumn{
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .threeColumn{
+            display: flex;
+        }
+        .threeColumn .column{
+            width: 100%;
+            max-width: 200px;
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
+    <center class="wrapper">
+        <table class="main" width="100%">
+<!-- border -->
 
-  <table width="100%">
-    <tr>
-        <td valign="top"><img src="https://via.placeholder.com/150" alt="" width="150"/></td>
-        <td align="right">
-            <h3>Shinra Electric power company</h3>
-            <pre>
-                Company representative name
-                Company address
-                Tax ID
-                phone
-                fax
-            </pre>
-        </td>
-    </tr>
-
-  </table>
-
-  <table width="100%">
-    <tr>
-        <td><strong>From:</strong> Linblum - Barrio teatral</td>
-        <td><strong>To:</strong> Linblum - Barrio Comercial</td>
-    </tr>
-
-  </table>
-
-  <br/>
-
-  <table width="100%">
-    <thead style="background-color: lightgray;">
-      <tr>
-        <th>#</th>
-        <th>Description</th>
-        <th>Quantity</th>
-        <th>Unit Price $</th>
-        <th>Total $</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Playstation IV - Black</td>
-        <td align="right">1</td>
-        <td align="right">1400.00</td>
-        <td align="right">1400.00</td>
-      </tr>
-      <tr>
-          <th scope="row">1</th>
-          <td>Metal Gear Solid - Phantom</td>
-          <td align="right">1</td>
-          <td align="right">105.00</td>
-          <td align="right">105.00</td>
-      </tr>
-      <tr>
-          <th scope="row">1</th>
-          <td>Final Fantasy XV - Game</td>
-          <td align="right">1</td>
-          <td align="right">130.00</td>
-          <td align="right">130.00</td>
-      </tr>
-    </tbody>
-
-    <tfoot>
         <tr>
-            <td colspan="3"></td>
-            <td align="right">Subtotal $</td>
-            <td align="right">1635.00</td>
-        </tr>
-        <tr>
-            <td colspan="3"></td>
-            <td align="right">Tax $</td>
-            <td align="right">294.3</td>
-        </tr>
-        <tr>
-            <td colspan="3"></td>
-            <td align="right">Total $</td>
-            <td align="right" class="gray">$ 1929.3</td>
-        </tr>
-    </tfoot>
-  </table>
+            <td style="">
+                <table width="100%">
+                    <!-- top -->
+                    <tr>
+                        <td class="two-columns" style="padding: 33px 20px 0px 20px;">
+                            <table class="column">
+                                <tr>
+                                    <td class="logo">
+                                        <a href="#"> <img src="./images/logo.png" width="66" alt=""></a>
+                                    </td>
+                                </tr>
+                            </table>
 
+                            <table class="column" >
+                                <tr style="text-align: end;">
+                                    <td>
+                                        <p style="margin-top: 0; margin-bottom: 4px;">14 October, 2022</p>
+                                        <p style="margin-top: 0; margin-bottom: 0;">Saturday, 9:40pm</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- banner -->
+                    <tr>
+                        <td colspan="1000" style="padding: 0px 20px 0px 20px;">
+                            <table width="100%">
+                                <tr>
+                                    <td class="two-columns" style="background-color: #EFF7FD; padding: 24px 0 24px 24px; border-radius: 8px; margin-top: 24px;">
+                                        <table class="column">
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-top: 0; margin-bottom: 4px; font-weight: 600; font-size: 16px; color: #151414">Hi Rashedul, Thanks for <br> your ride!</p>
+                                                    <p style="margin-top: 0; margin-bottom: 0; font-weight: 400; font-size: 14px; text-align: justify; color: #151414">We hope you enjoyed your ride with us.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                    
+                                        <table class="column">
+                                            <tr>
+                                                <td style="text-align: end;">
+                                                    <img src="./images/car.png" alt="" width="120" style="max-width: 100%;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- memo section -->
+
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 0px 20px;">
+                            <table class="column" style="border-bottom: 1px solid black;">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 24px; color: #151414;">Total</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="border-bottom: 1px solid black";>
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 600; font-size: 24px; color: #151414;">BDT 900</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 0px 20px;">
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 16px; color: #151414;">Trip fare</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 500; font-size: 16px; color: #151414;">BDT 600</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 0px 20px;">
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 16px; color: #151414;">Extra charge</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 500; font-size: 16px; color: #151414;">BDT 600</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 0px 20px;">
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 16px; color: #151414;">Promo code</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 500; font-size: 16px; color: #48A43F;">-BDT 100</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 0px 20px;">
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 16px; color: #151414;">Net total</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="border-bottom: 1px dashed #DBDBDB;">
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 500; font-size: 16px; color: #151414;">BDT 600</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- payment part -->
+                    <tr>
+                        <td class="two-columns" style="padding: 20px 20px 0px 20px;">
+                            <table class="column">
+                                <tr>
+                                    <td style="text-align: start;">
+                                    <p style="font-weight: 400; font-size: 12px; color: #676769; margin-top: 0; margin-bottom: 0;">PAYMENT</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="two-columns" style="padding: 0px 20px 12px 20px;">
+                            <table class="column">
+                                <tr>
+                                    <td style="text-align: start; padding-top: 8px;">
+                                    <table style="max-width: 300px;">
+                                        <tr>
+                                            <td><img src="./images/cash.png" alt=""></td>
+                                            <td style="padding-left: 16px;">
+                                                <p style="margin-top: 0; margin-bottom:7px; font-weight: 500; font-size: 14px; color: #151414;">Cash</p>
+                                                <p style="margin-top: 4px; margin-bottom:0;  font-weight: 400; font-size: 12px; color: #676769;">12: 20 PM, 22 Oct 2022</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="column">
+                                <tr>
+                                    <td style="text-align: end;">
+                                    <p style="font-weight: 400; font-size: 16px; color: #151414; padding-top: 5px; margin-bottom: 0;">BDT 700</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr style="border-top: 1px solid #DBDBDB; padding: 0 20px 0 20px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <p style="font-weight: 500; font-size: 14px; text-align: center; color: #1E88E5; margin-top: 0; margin-bottom: 0; padding: 10px 0 10px 0px;"><span><img style="vertical-align: middle;" src="./images/download.png" alt=""></span> Download invoice (PDF) </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1000" style="background-color: #F7F7F7; padding: 30px 0 30px 20px;">
+                            <table width="100%">
+                                <tr>
+                                    <td style="text-align: start;">
+                                        <p style="font-weight: 400; font-size: 12px; color: #676769; margin-top: 0; margin-bottom: 0;">YOUR RIDE WITH</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column">
+                                <tr>
+                                    <td style="text-align: start; padding-top: 8px;">
+                                    <table style="max-width: 300px;">
+                                        <tr>
+                                            <td><img src="./images/man.png" width="56px" style="max-width: 100%; border-radius: 100%;"  alt="">
+                                            <div style="margin-inline: auto; max-width:44px; height: 20px; border-radius: 20px; background-color: white; text-align: center; font-size: 14px; font-weight: 500;">
+                                                    5 ★
+                                            </div>
+                                            </td>
+                                            <td style="padding-left: 16px; padding-bottom: 25px;">
+                                                <p style="margin-top: 0; margin-bottom:7px; font-weight: 500; font-size: 18px; color: #151414;">Abdul Karim</p>
+                                                <div style="margin-top: 4px; margin-bottom:0;  font-weight: 400; font-size: 12px; color: #676769; display: flex;">KIA SPORTAGE
+                                                <p style="width: 6px; height: 6px; background-color: #C8C8C8; border-radius: 100%; margin: 3px;"></p> DHA GA 36-5467
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 20px 20px 12px 20px;">
+                            <div style="display: flex; width: 100%;">
+                                <div style="width: 61px; line-height: 20px; height: 20px; border: 1px solid #8D8D8F; border-radius: 40px; font-size: 12px; font-weight: 500; text-align: center; color: #4D4D4F;">
+                                    <span style="text-align: center;"> Rental </span>
+                                </div>
+                                <span style="margin: 2px 0 30px 10px; padding-right: 10px; color: #4D4D4F; font-size: 14px; font-weight: 500; text-align: center; border-right: 1px solid #4D4D4F;">8.5 KM</span>
+                                <span style="margin: 2px 0 30px 10px; padding-right: 10px; color: #4D4D4F; font-size: 14px; font-weight: 500; text-align: center; border-right: 1px solid #4D4D4F;">8.5 KM</span>
+                                <span style="margin: 2px 0 30px 10px; color: #4D4D4F; font-size: 14px; font-weight: 500; text-align: center;">Trip id JT5634737</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:20px;">
+                            <table  cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="./images/pickup.png" alt="">
+                                        </div>
+                                        <div style="margin-left: 4px;">
+                                            <img src="./images/long_line.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="./images/drop.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td style="width: 100%;">
+                                        <div style="padding-left: 16px;">
+                                            <div style="">
+                                                <span style="display: block; font-size: 12px; text-align: left; font-weight: 400; color: #4D4D4F;">PICK UP LOCATION</span>
+                                                <span style="display: block; font-size: 14px; text-align: left; font-weight: 500; color: #151414; margin-top: 2px;">Radisson Blu Dhaka Water Garden, Airport Rd</span>
+                                            </div>
+                                            <hr style="border: 1px solid #DBDBDB; margin-top: 15px;">
+                                            <div style="margin-top: 20px;">
+                                                <span style="display: block; font-size: 12px; text-align: left; font-weight: 400; color: #4D4D4F;">DROP OFF LOCATION</span>
+                                                <span style="display: block; font-size: 14px; text-align: left; font-weight: 500; color: #151414; margin-top: 2px;">Radisson Blu Dhaka Water Garden, Airport Rd</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0 20px 20px 20px;">
+                            <div style="border: 1px solid #DBDBDB; margin-top: 25px;">
+                                <div style="display: block; margin: 0 auto; width: fit-content; padding: 10px 0px;">
+                                    <div style="display: flex; column-gap: 5px;">
+                                        <img src="./images/reset.png" style="width: 15px;" alt="">
+                                        <span style="color: #f04935; font-size: 12px; text-align: center; font-weight: 500">Send request again</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table width="100%" style="background-color: #f04935; padding: 30px;">
+                                <tr>
+                                    <td class="two-columns" style="border-bottom: 1px solid rgb(199, 177, 177); padding-bottom: 24px;">
+                                        <table class="column">
+                                            <tr>
+                                                <td class="logo">
+                                                    <a href="#"> <img src="./images/white-logo.png" width="66" alt=""></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+            
+                                        <table class="column" >
+                                            <tr>
+                                                <td style="text-align: end;">
+                                                    <div style="display: inline-flex;">
+                                                        <img src="./images/googleplay.png" width="80px" style="max-width: 100%;" alt="">
+                                                        <img src="./images/jatri.png" width="80px" style="max-width: 100%; margin-left:8px;"  alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="two-columns" style="padding-top: 24px; border-bottom: 1px solid rgb(199, 177, 177); padding-bottom: 24px;">
+                                        <table class="column">
+                                            <tr>
+                                                <td style="text-align: start;">
+                                                    <a href="mailto:support@jatri.co" style="display: flex; text-decoration: none;">
+                                                        <img src="./images/question.png" alt="">
+                                                        <span style="font-weight: 500; font-size: 12px; color: white; margin-left: 4px;">support@jatri.co</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+            
+                                        <table class="column">
+                                            <tr>
+                                                <td style="text-align: end;">
+                                                    <a href="mailto:support@jatri.co" style="text-decoration: none; display: inline-flex;">
+                                                        <img src="./images/phone.png" alt="">
+                                                        <span style="font-weight: 500; font-size: 12px; color: white; margin-left: 4px;">09642080808</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center; padding: 18px 0; border-bottom: 1px solid rgb(199, 177, 177);">
+                                        <img src="./images/facebook.png" alt="">
+                                        <img src="./images/youtube.png" alt="" style="margin: 0 44px;">
+                                        <img src="./images/linkedin.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        </table>
+    </center>
+    
 </body>
 </html>
